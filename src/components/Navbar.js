@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <ul>
+    <ul style={{ display: 'flex', justifyContent: 'space-around' }}>
       <NavLink to='/'>Home</NavLink>
       <NavLink to='/articles'>Articles</NavLink>
       <NavLink to='/articles/hello'>Article: hello</NavLink>
