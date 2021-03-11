@@ -10,8 +10,9 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/articles/:topic' component={Articles} />
-        <Route exact path='/articles/single/:id' component={SingleArticle} />
+        <Route exact path='/articles' component={Articles} />
+        <Route exact path='/articles/:content_type' component={Articles} />
+        <Route exact path='/articles/:content_type/:slug' component={SingleArticle} />
       </Switch>
     </div>
   );
